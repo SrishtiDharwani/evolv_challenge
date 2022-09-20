@@ -1,0 +1,54 @@
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.walked {
+  font-size: 0.7rem;
+  margin-top: 0.3rem;
+}
+
+.info h3 {
+  margin-bottom: 0.4rem;
+}
+
+.place {
+  display: flex;
+  flex-direction: row;
+  height: 3.6rem;
+}
+
+.next {
+  display: flex;
+  flex-direction: row;
+  height: 3.6rem;
+  align-items: center;
+  /* margin-left: -2.5rem; */
+}
+
+.pieContainer {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.cals {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  top: 29%;
+  z-index: 10;
+}

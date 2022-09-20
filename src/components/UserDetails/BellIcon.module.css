@@ -1,0 +1,14 @@
+.bell {
+    display: flex;
+    background: #36F5C7;
+    height:3rem;
+    width:3rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bellImg {
+    height: 1.5rem;
+    width:1.5rem;
+  }

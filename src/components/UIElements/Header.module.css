@@ -1,0 +1,32 @@
+.head {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content:end;
+
+}
+
+.header {
+  display: flex;
+  flex:0.8;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.header div {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  height: 3rem;
+}
+
+.header img {
+  margin-right: 1rem;
+}
+
+.header h3 {
+  font-size: 18px;
+  line-height: 22px;
+}

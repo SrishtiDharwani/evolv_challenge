@@ -1,0 +1,22 @@
+.barHolder {
+    padding:1 rem;
+    height:100%;
+    background: #333b44;
+}
+
+.bar {
+  background: #1b222a;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 4.8px;
+  width: 250px;
+}
+
+.barInfo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+
+}

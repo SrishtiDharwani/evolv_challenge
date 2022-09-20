@@ -1,0 +1,30 @@
+.date {
+  display: flex;
+  flex-direction: row;
+  height: 3.6rem;
+}
+
+.dateContainer {
+  display: flex;
+  flex-direction: row;
+  height: 1.8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.warn {
+  display: flex;
+  flex-direction: row;
+  height: 1.8rem;
+  background-color: #CC3838;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1rem 0.5rem;
+}
+
+.image {
+  height: 70%;
+  margin-right: 1rem;
+}
+
