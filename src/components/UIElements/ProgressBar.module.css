@@ -1,6 +1,43 @@
-.progressBar {
-  background: #101317;
-  border-radius: 6.5px;
-  width:100%;
-  height:1rem;
+
+body {
+  background-color: #101317;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.progress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 6.48276px;
+  background-color: #101317;
+  border-radius: 20px;
+  margin: 15px 0;
+  width: 196.1px;
+  height: 10px;
+}
+
+.progressDone {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+.progresDone div {
+  padding-left: 8rem;
+  
+}
+
+.progressDone p {
+  font-size:9px;
 }

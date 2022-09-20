@@ -15,4 +15,4 @@ const Nutritionpage = () => {
   )
 }
 
-export default Nutritionpage
+export default Nutritionpage;

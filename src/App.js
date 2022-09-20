@@ -12,6 +12,7 @@ const App = () => {
       <Route path="/" element={<Main />} />
       <Route path="/:uid/workout" element={<Workout/>} />
       <Route path="/:uid/nutrition" element={<Nutritionpage/>} />
+      <Route path="*" element={<Main/>} />
     </Routes>
   );
 };

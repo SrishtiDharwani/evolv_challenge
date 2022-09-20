@@ -16,7 +16,6 @@ const getAllUserData = async (req, res, next) => {
 };
 
 const updateCal = async (req, res, next) => {
-  console.log(req.body.calorieTarget);
 
   const userId = req.body.id;
   let user;

@@ -1,19 +1,25 @@
 import React from "react";
 import classes from "./ProgressBar.module.css";
 
-const ProgressBar = (props) => {
-    const percent=(props.cons/props.target)*100;
-    // console.log(props.width);
+const ProgressBar = ({ consumed, width, color }) => {
+  const [style, setStyle] = React.useState({});
+
+  setTimeout(() => {
+    const newStyle = {
+      opacity: 1,
+      width: `${width}%`,
+      backgroundColor: `${color}`,
+    };
+
+    setStyle(newStyle);
+  }, 200);
+
   return (
-    <div className={classes.progressBar}>
-      <div
-        // 
-        style={{
-          width:'25%,', color:'red'
-        }}
-      ></div>
+    <div className={classes.progress}>
+      <div className={classes.progressDone} style={style}></div>
+        <p style={{color:`${color}` ,fontSize:"10px", marginLeft:"5px"}}>{consumed}</p>
+
     </div>
   );
 };
-
 export default ProgressBar;

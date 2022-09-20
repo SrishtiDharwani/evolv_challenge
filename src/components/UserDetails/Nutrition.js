@@ -1,4 +1,4 @@
-import React, { useEffect, useState,useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { PieChart } from "react-minimal-pie-chart";
 import Tippy from "@tippyjs/react";
@@ -18,7 +18,6 @@ const Nutrition = (props) => {
   const [cal, setCal] = useState(calTarget);
   const [tooltipShown, setTooltipShown] = useState(false);
 
-
   const updateCal = useCallback(async () => {
     try {
       await fetch(`http://localhost:5000/api/home/${props.userId}/cal`, {
@@ -27,8 +26,7 @@ const Nutrition = (props) => {
         headers: { "Content-Type": "application/json" },
       });
     } catch (err) {}
-  },[cal,props.userId]);
-
+  }, [cal, props.userId]);
 
   const calIncrementHandler = () => {
     setCal((prevCal) => (Number(prevCal) + 0.1).toFixed(1));
@@ -51,6 +49,7 @@ const Nutrition = (props) => {
   return (
     <div className="subContainer">
       <Tippy
+        style={{ background: "#333b44", width: "208px", height: "165px" }}
         visible={tooltipShown}
         placement="bottom"
         content={

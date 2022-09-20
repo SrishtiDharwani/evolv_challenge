@@ -29,7 +29,6 @@ const StepCount = (data) => {
     if (steps > 0.5) {
       const newSteps = (steps - 0.5).toFixed(1);
       setSteps(newSteps);
-      // setSteps((prevSteps) => (prevSteps - 0.5).toFixed(1));
     } else {
       setSteps(0);
     }

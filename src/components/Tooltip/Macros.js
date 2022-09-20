@@ -4,15 +4,16 @@ import classes from "./Macros.module.css";
 
 const Macros = (props) => {
   return (
-    <div className={classes.barHolder}>
-      {/* <div className={classes.bar}>
+
+   <div className={classes.barHolder}>
+      <div className={classes.bar}>
         <div className={classes.barInfo}>
           <p>PROTEIN</p>
           <p>{props.proteinTarget}g</p>
         </div>
         <ProgressBar
-          cons={props.proteinConsumed}
-          total={props.proteinTarget}
+          consumed={props.proteinConsumed}
+          width={(props.proteinConsumed / props.proteinTarget) * 100}
           color="#F45C84"
         />
       </div>
@@ -23,12 +24,12 @@ const Macros = (props) => {
             <p>{props.fatTarget}g</p>
           </div>
           <ProgressBar
-            cons={props.fatConsumed}
-            total={props.fatTarget}
+            consumed={props.fatConsumed}
+            width={(props.fatConsumed / props.fatTarget) * 100}
             color="#03C6FA"
           />
         </div>
-      </div> */}
+      </div>
       <div>
         <div className={classes.bar}>
           <div className={classes.barInfo}>
@@ -36,14 +37,15 @@ const Macros = (props) => {
             <p>{props.carbTarget}g</p>
           </div>
           <ProgressBar
-            cons={props.carbConsumed}
-            total={props.carbTarget}
-            width={props.carbConsumed/props.carbTarget*100}
+            consumed={props.carbConsumed}
+            width={(props.carbConsumed / props.carbTarget) * 100}
             color="#F0C50F"
           />
         </div>
       </div>
-    </div>
+     </div>
+
+
   );
 };
 
