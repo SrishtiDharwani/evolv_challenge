@@ -48,7 +48,7 @@ const updateSteps = async (req, res, next) => {
     user = await User.findById(userId);
   } catch (err) {
     const error = new HttpError(
-      "Something went wrong! Could not update csteps target!",
+      "Something went wrong! Could not update steps target!",
       500
     );
     return next(error);

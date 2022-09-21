@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 
 mongoose
   .connect(
-    `mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@ac-zvtphov-shard-00-00.qydfuoa.mongodb.net:27017,ac-zvtphov-shard-00-01.qydfuoa.mongodb.net:27017,ac-zvtphov-shard-00-02.qydfuoa.mongodb.net:27017/?ssl=true&replicaSet=atlas-14j6hr-shard-0&authSource=admin&retryWrites=true&w=majority`
+    `mongodb://srishti_d:m9Ctz5cDvJBVh3Dy@ac-zvtphov-shard-00-00.qydfuoa.mongodb.net:27017,ac-zvtphov-shard-00-01.qydfuoa.mongodb.net:27017,ac-zvtphov-shard-00-02.qydfuoa.mongodb.net:27017/?ssl=true&replicaSet=atlas-14j6hr-shard-0&authSource=admin&retryWrites=true&w=majority`
   )
   .then(() => {
     app.listen(5000);
