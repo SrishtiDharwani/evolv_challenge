@@ -5,6 +5,8 @@ import classes from "./Container.module.css";
 
 const Container = () => {
   const [loadedUsers, setLoadedUsers] = useState();
+  const [windowWidth,setWindowWidth]=useState(window.innerWidth);
+  window.addEventListener("resize", () => setWindowWidth(window.innerWidth));
 
   const fetchUsers = useCallback(async () => {
     try {
@@ -24,8 +26,8 @@ const Container = () => {
 
   return (
     <div className={classes.main}>
-      <Header />
-      {loadedUsers && <AllUsers users={loadedUsers} />}
+      {windowWidth>927&&<Header />}
+      {loadedUsers && <AllUsers users={loadedUsers} windowWidth={windowWidth} />}
     </div>
   );
 };

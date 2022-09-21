@@ -12,10 +12,11 @@ body {
 
 .bg {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-top: 10vh;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
 }
 
 .button-s {
@@ -58,7 +59,7 @@ flex-direction: column;
 .subContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: none;
 }

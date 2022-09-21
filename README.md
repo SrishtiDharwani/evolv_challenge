@@ -1,6 +1,10 @@
-# Dashboard
+# Trainer Dashboard
 
 <img src='./public/evolv_ss.png'>
+
+# Responsive
+
+<img src='./public/ss2.png'>
 
 # Getting Started with Create React App
 
