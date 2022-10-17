@@ -99,7 +99,7 @@ const Nutrition = (props) => {
       </div>
       <div className={classes.next}>
         <button className="button-b" onClick={toNutritionPage}>
-          >
+          {">"}
         </button>
       </div>
     </div>

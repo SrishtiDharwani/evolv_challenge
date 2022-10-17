@@ -46,7 +46,8 @@ const StepCount = (data) => {
       >
         <CircularProgressbarWithChildren
           value={data.stepsWalked}
-          maxValue={data.stepsTarget}
+          // maxValue={data.stepsTarget}
+          maxValue={steps*1000}
           strokeWidth={11}
           counterClockwise={true}
           styles={buildStyles({
